@@ -1,4 +1,6 @@
-# node-plantuml
+# node-plantuml-custom
+
+> This is a fork of [node-plantuml](https://github.com/markushedvall/node-plantuml).
 
 A Node.js module and CLI for running [PlantUML](http://plantuml.sourceforge.net/).
 
@@ -13,13 +15,13 @@ Install [Graphviz](http://www.graphviz.org/) to be able to generate all diagram 
 # Install
 
 ```
-npm install node-plantuml
+npm install node-plantuml-custom
 ```
 
-If you want to use the CLI node-plantuml can be install it globally:
+If you want to use the CLI node-plantuml-custom can be install it globally:
 
 ```
-npm install node-plantuml -g
+npm install node-plantuml-custom -g
 ```
 
 # Example
@@ -27,7 +29,7 @@ npm install node-plantuml -g
 Diagrams can be created from source files.
 
 ```javascript
-var plantuml = require('node-plantuml');
+var plantuml = require('node-plantuml-custom');
 var fs = require('fs');
 
 var gen = plantuml.generate("input-file");
@@ -40,7 +42,7 @@ Following is an example of a simple web server for generating images from encode
 
 ```javascript
 var express = require('express');
-var plantuml = require('node-plantuml');
+var plantuml = require('node-plantuml-custom');
 
 var app = express();
 
@@ -71,7 +73,7 @@ app.listen(8080);
 
 # CLI
 
-The node-plantuml CLI can be accessed with the puml command.
+The node-plantuml-custom CLI can be accessed with the puml command.
 ```shell
 puml generate file.puml -o file.png
 ```
